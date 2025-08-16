@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>some love for ma bb v 💙</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #ffe6f0, #d6f0ff);
+      color: #333;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+    button {
+      background: #ff5f8f;
+      border: none;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 12px;
+      font-size: 1em;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ff3f76;
+    }
+    #mensagem, #foto {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+    img {
+      margin-top: 20px;
+      max-width: 80%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transform: rotate(0deg); /* deixa a foto em pé */
+    }
+  </style>
+</head>
+<body>
+  <h1>hey sweetheart 💙</h1>
+  <p>a little gift for u…</p>
+
+  <button onclick="tocarMusica()">🎵 our song</button>
+  <button onclick="mostrarMensagem()">💌 message</button>
+  <button onclick="mostrarFoto()">📸 Nossa Foto</button>
+
+  <div id="mensagem">
+    <p>you complete me in a way no one else ever could 💌</p>
+  </div>
+
+  <div id="foto">
+    <img src="https://drive.google.com/uc?export=view&id=1vvU9HJsOUuFdMDZaff7ZeYslj5R5I8PL" alt="want u 4ever ">
+  </div>
+
+  <audio id="musica" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="auto"></audio>
+
+  <script>
+    function tocarMusica() {
+      document.getElementById("musica").play();
+    }
+    function mostrarMensagem() {
+      document.getElementById("mensagem").style.display = "block";
+    }
+    function mostrarFoto() {
+      document.getElementById("foto").style.display = "block";
+    }
+  </script>
+</body>
+</html>
